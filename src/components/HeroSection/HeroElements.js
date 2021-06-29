@@ -7,7 +7,8 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding: 0 30px;
-height: 800px;
+height: 100vh;
+${'' /* height: 800px; */}
 position: relative;
 z-index: 1;
 
@@ -59,15 +60,16 @@ align-items: center;
 
 export const HeroH1 = styled.h1 `
 color: #fff;
-font-size: 48px;
+opacity: 0;
+font-size: 80px;
 text-align: center;
 
 @media screen and (max-width: 768px){
-    font-size: 40px;
+    font-size: 62px;
 }
 
 @media screen and (max-width: 480px){
-    font-size: 32px;
+    font-size: 42px;
 }
 
 `
@@ -77,6 +79,7 @@ color: #fff;
 font-size: 24px;
 text-align: center;
 max-width: 600px;
+opacity: 0;
 
 @media screen and (max-width: 768px){
     font-size: 24px;

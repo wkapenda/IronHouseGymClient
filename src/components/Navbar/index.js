@@ -44,60 +44,35 @@ const Navbar = ({ toggle }) => {
             <NavMenu>
                 <NavItem>
                     <NavLinks 
-                    to="home"
-                    smooth={true} 
-                    duration={500} 
-                    spy={true}
-                    exact="true" 
-                    offset={-80} 
+                    to="/"
                     >
                     Home
                     </NavLinks>
                 </NavItem>
                 <NavItem>
                     <NavLinks 
-                    to="facilities"
-                    smooth={true} 
-                    duration={500} 
-                    spy={true}
-                    exact="true" 
-                    offset={-80} 
+                    to="/facilities"
                     >
                     Facilities
                     </NavLinks>
                 </NavItem>
                 <NavItem>
                     <NavLinks 
-                    to="personalTraining"
-                    smooth={true} 
-                    duration={500} 
-                    spy={true}
-                    exact="true" 
-                    offset={-80} 
+                    to="/personalTraining"
                     >
                     Personal Training
                     </NavLinks>
                 </NavItem>
                 <NavItem>
                     <NavLinks 
-                    to="groupTraining"
-                    smooth={true} 
-                    duration={500} 
-                    spy={true}
-                    exact="true" 
-                    offset={-80} 
+                    to="/groupTraining"
                     >
                     Group Training
                     </NavLinks>
                 </NavItem>
                 <NavItem>
                     <NavLinks 
-                    to="membership"
-                    smooth={true} 
-                    duration={500} 
-                    spy={true}
-                    exact="true" 
-                    offset={-80} 
+                    to="/membership"
                     >
                     Membership
                     </NavLinks>
@@ -105,7 +80,7 @@ const Navbar = ({ toggle }) => {
                 
             </NavMenu>
             <NavBtn>
-            <NavIconLink to="account"><VscAccount className="accountIcon" /></NavIconLink>
+            <NavIconLink to="/account"><VscAccount className="accountIcon" /></NavIconLink>
             
             </NavBtn>
             

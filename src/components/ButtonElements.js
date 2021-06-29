@@ -16,6 +16,7 @@ justify-content: center;
 align-items: center;
 transition: all 0.2s ease-in-out;
 margin-top: 24px;
+opacity: 0;
 
 &:hover {
     transition: all 0.2s ease-in-out;

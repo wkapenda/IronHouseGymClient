@@ -1,14 +1,12 @@
 import styled from "styled-components"
 import { Link as LinkR } from "react-router-dom"
-import { Link as LinkS } from "react-scroll"
+// import { Link as LinkS } from "react-scroll"
 import {FaBars} from "react-icons/fa"
 
 
 export const Nav = styled.nav `
 background: #fff;
-${'' /* background: ${({ scrollNav }) => (scrollNav ? "#fff" : "transparent")}; */}
 height: 80px;
-${'' /* margin-top: -80px; */}
 display: flex;
 justify-content: center;
 align-items: center;
@@ -101,18 +99,20 @@ height: 80px;
 
 `;
 
-export const NavLinks = styled(LinkS)`
-color: #fffff;
+export const NavLinks = styled(LinkR)`
+color: black;
 display: flex;
 align-items: center;
 text-decoration: none;
-padding: 0 1rem;
+padding: 0 0.2rem;
+margin: 0 0.7rem;
 height: 100%;
 cursor: pointer;
 
-&.active {
-    border-bottom: 3px solid #45B649;
 
+&:hover {
+    transition: all 0.2s ease-in-out;
+    color: green;
 }
 `;
 
@@ -127,11 +127,7 @@ align-items: center;
 
 export const NavBtnLink = styled(LinkR)`
 border-radius: 5px;
-background: #DCE35B;  /* fallback for old browsers */
-${'' /* background: -webkit-linear-gradient(to right, #45B649, #DCE35B);  
-background: linear-gradient(to right, #45B649, #DCE35B);  */}
-
-${'' /* background: #01bf71; */}
+background: #DCE35B;
 white-space: now-rap;
 padding: 10px 22px;
 color: #010606;
@@ -154,7 +150,8 @@ text-decoration: none;
 export const NavIconLink = styled(LinkR)`
 
 white-space: now-rap;
-padding: 10px 0px 10px 80px;
+padding: 10px 0px 10px;
+margin-left: 80px;
 outline: none;
 border: none;
 cursor: pointer;
