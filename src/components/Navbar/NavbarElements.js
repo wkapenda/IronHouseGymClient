@@ -1,12 +1,14 @@
 import styled from "styled-components"
 import { Link as LinkR } from "react-router-dom"
 import { Link as LinkS } from "react-scroll"
+import {FaBars} from "react-icons/fa"
 
 
 export const Nav = styled.nav `
-background: ${({ scrollNav }) => (scrollNav ? "#fff" : "transparent")};
+background: #fff;
+${'' /* background: ${({ scrollNav }) => (scrollNav ? "#fff" : "transparent")}; */}
 height: 80px;
-margin-top: -80px;
+${'' /* margin-top: -80px; */}
 display: flex;
 justify-content: center;
 align-items: center;
@@ -26,8 +28,8 @@ display: flex;
 justify-content: space-between;
 height: 80px;
 width: 100%;
-padding: 0 24px;
-max-width: 1100px;
+padding: 0 12px;
+max-width: 1200px;
 z-index: 1;
 
 `;
@@ -36,7 +38,7 @@ export const GymIcon = styled.img `
 height: 80px;
 width: 150px;
 margin-top: 10px;
-margin-bottom: 10px;
+margin-bottom: 15px;
 `
 
 export const NavLogo = styled(LinkR)`
@@ -52,18 +54,31 @@ text-decoration: none;
 
 `;
 
-export const MobileIcon = styled.div`
+export const MobileIcon = styled(FaBars)`
+fill: black;
+
+    &:hover {
+        fill: green;
+        transition: 0.2s ease-in-out;
+
+    }
+
+`;
+
+export const MobileWrap= styled.div`
+
 display: none;
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1140px){
+    
     display: block;
     position: absolute;
-    top: 0;
+    top: 5px;
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #fff;
+    
 }
 
 `;
@@ -73,9 +88,9 @@ display: flex;
 align-items: center;
 list-style: none;
 text-align: center;
-margin-right: -22px;
+margin-left: 90px;
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1140px){
     display: none;
 }
 
@@ -96,7 +111,8 @@ height: 100%;
 cursor: pointer;
 
 &.active {
-    border-bottom: 3px solid #01bf71;
+    border-bottom: 3px solid #45B649;
+
 }
 `;
 
@@ -104,14 +120,18 @@ export const NavBtn = styled.nav`
 display: flex;
 align-items: center;
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1140px){
     display: none;
 }
 `;
 
 export const NavBtnLink = styled(LinkR)`
-border-radius: 50px;
-background: #01bf71;
+border-radius: 5px;
+background: #DCE35B;  /* fallback for old browsers */
+${'' /* background: -webkit-linear-gradient(to right, #45B649, #DCE35B);  
+background: linear-gradient(to right, #45B649, #DCE35B);  */}
+
+${'' /* background: #01bf71; */}
 white-space: now-rap;
 padding: 10px 22px;
 color: #010606;
@@ -125,10 +145,22 @@ text-decoration: none;
 
 &:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
+    background: #45B649;
     color: #010606;
 }
 `;
 
+
+export const NavIconLink = styled(LinkR)`
+
+white-space: now-rap;
+padding: 10px 0px 10px 80px;
+outline: none;
+border: none;
+cursor: pointer;
+transition: all 0.2s ease-in-out;
+text-decoration: none;
+
+`;
 
 

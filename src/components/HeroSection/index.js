@@ -20,9 +20,10 @@ const HeroSection = () => {
             <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
         </HeroBg>
         <HeroContent>
-            <HeroH1>Find the true power in your data and accelerate business value</HeroH1>
-            <HeroP>Drive better outcomes through smarter data-driven experiences 
-            and revamp your business intelligence</HeroP>
+            <HeroH1>IRON HOUSE GYM</HeroH1>
+            <HeroP>Get the strength workouts, cardio equipment, 
+            group exercise classes and personal training, all the support you need to crush your fitness goals. 
+            Are you in?</HeroP>
             <HeroBtnWrapper>
             <Button to="signup" 
             onMouseEnter={onHover} 
@@ -35,7 +36,7 @@ const HeroSection = () => {
             exact="true" 
             offset={-80} 
             >
-                Get Started {hover ? <ArrowForward /> : <ArrowRight />}
+                Join Now {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
 
             </HeroBtnWrapper>

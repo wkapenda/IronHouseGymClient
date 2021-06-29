@@ -1,0 +1,12 @@
+
+/* On hover animation for account icon */
+
+.accountIcon {
+    font-size: 25px;
+    fill: black;
+
+}
+.accountIcon:hover {
+fill: green;
+}
+

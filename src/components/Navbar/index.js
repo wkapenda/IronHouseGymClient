@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react';
-import {FaBars} from "react-icons/fa"
 import {IconContext} from "react-icons/lib"
 import {animateScroll as scroll} from "react-scroll"
 import LogoIcon from "../../images/ihLogo.png";
+import { VscAccount } from "react-icons/vsc"
+import "./navbar.css";
 
-import { Nav, NavbarContainer, GymIcon, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from "./NavbarElements";
+import { Nav, NavbarContainer, GymIcon, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, NavIconLink, MobileWrap} from "./NavbarElements";
 
 //rafpce
 
@@ -37,9 +38,9 @@ const Navbar = ({ toggle }) => {
             <NavLogo to='/' onClick={toggleHome}> 
             <GymIcon src={LogoIcon} />
              </NavLogo>
-            <MobileIcon onClick={toggle}>
-                <FaBars />
-            </MobileIcon>
+            <MobileWrap onClick={toggle}>
+                <MobileIcon />
+            </MobileWrap>
             <NavMenu>
                 <NavItem>
                     <NavLinks 
@@ -67,7 +68,7 @@ const Navbar = ({ toggle }) => {
                 </NavItem>
                 <NavItem>
                     <NavLinks 
-                    to="personaltraining"
+                    to="personalTraining"
                     smooth={true} 
                     duration={500} 
                     spy={true}
@@ -79,7 +80,7 @@ const Navbar = ({ toggle }) => {
                 </NavItem>
                 <NavItem>
                     <NavLinks 
-                    to="grouptraining"
+                    to="groupTraining"
                     smooth={true} 
                     duration={500} 
                     spy={true}
@@ -101,21 +102,15 @@ const Navbar = ({ toggle }) => {
                     Membership
                     </NavLinks>
                 </NavItem>
-                <NavItem>
-                    <NavLinks
-                    to="signup"
-                    smooth={true} 
-                    duration={500} 
-                    spy={true}
-                    exact="true" 
-                    offset={-80} 
-                    >
-                    Sign Up
-                    </NavLinks>
-                </NavItem>
+                
             </NavMenu>
             <NavBtn>
-                    <NavBtnLink to="/signin"> Sign In </NavBtnLink>
+            <NavIconLink to="account"><VscAccount className="accountIcon" /></NavIconLink>
+            
+            </NavBtn>
+            
+            <NavBtn>
+                    <NavBtnLink to="/contact">Contact Us</NavBtnLink>
             </NavBtn>
         </NavbarContainer>
 
