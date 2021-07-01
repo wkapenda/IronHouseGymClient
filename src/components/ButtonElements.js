@@ -12,15 +12,17 @@ outline: none;
 border: none;
 cursor: pointer;
 display: flex;
-justify-content: center;
+justify-content: left;
 align-items: center;
 transition: all 0.2s ease-in-out;
 margin-top: 24px;
-opacity: 0;
+opacity: 1;
 
 &:hover {
+    color: black;
     transition: all 0.2s ease-in-out;
     background: ${({primary}) => (primary ? "#45B649" : "#DCE35B")};
+    text-decoration: none;
 }
 
 `

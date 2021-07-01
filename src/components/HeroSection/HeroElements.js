@@ -62,6 +62,7 @@ export const HeroH1 = styled.h1 `
 color: #fff;
 opacity: 0;
 font-size: 80px;
+font-weight: bold;
 text-align: center;
 
 @media screen and (max-width: 768px){
@@ -82,7 +83,7 @@ max-width: 600px;
 opacity: 0;
 
 @media screen and (max-width: 768px){
-    font-size: 24px;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 480px){

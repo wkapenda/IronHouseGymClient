@@ -58,6 +58,7 @@ cursor: pointer;
 &:hover {
     color: #01bf71;
     transition: 0.2s ease-in-out;
+    text-decoration: none;
 
 }
 `
@@ -86,6 +87,7 @@ export const SidebarRoute = styled(LinkR) `
      transition: all 0.2s ease-in-out;
      background: #45B649;
      color: #010606;
+     text-decoration: none;
  }
 `
 

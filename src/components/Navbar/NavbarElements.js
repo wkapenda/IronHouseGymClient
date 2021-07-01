@@ -71,7 +71,7 @@ display: none;
     
     display: block;
     position: absolute;
-    top: 5px;
+    top: -10px;
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
@@ -87,6 +87,7 @@ align-items: center;
 list-style: none;
 text-align: center;
 margin-left: 90px;
+margin-top: 18px;
 
 @media screen and (max-width: 1140px){
     display: none;
@@ -112,6 +113,7 @@ cursor: pointer;
 
 &:hover {
     transition: all 0.2s ease-in-out;
+    text-decoration: none;
     color: green;
 }
 `;
@@ -121,7 +123,9 @@ display: flex;
 align-items: center;
 
 @media screen and (max-width: 1140px){
-    display: none;
+
+display: none;
+    
 }
 `;
 
@@ -141,6 +145,7 @@ text-decoration: none;
 
 &:hover {
     transition: all 0.2s ease-in-out;
+    text-decoration: none;
     background: #45B649;
     color: #010606;
 }

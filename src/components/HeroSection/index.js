@@ -16,6 +16,7 @@ const HeroSection = () => {
     useEffect(() => {
 
         gsap.to(".heroHeading ",{
+            delay: 0.3,
             duration: 0.7,
             y: -30,
             autoAlpha: 1,
@@ -25,6 +26,7 @@ const HeroSection = () => {
 
           })
         gsap.to(".heroText",{
+            delay: 0.3,
             duration: 1,
             y: -30,
             autoAlpha: 1,
@@ -35,6 +37,7 @@ const HeroSection = () => {
           })
 
           gsap.to(".heroBtn",{
+            delay: 0.4,
             duration: 1.2,
       
             autoAlpha: 1,
