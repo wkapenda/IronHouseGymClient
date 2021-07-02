@@ -1,24 +1,21 @@
 import React, { useState } from 'react'
 import { Button } from "../ButtonElements"
 
-import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, img, ArrowForward, ArrowRight } from "./InfoElements"
+import { InfoContainer, InfoWrapper, InfoColumn, TopLine, Heading, Subtitle, BtnWrap, ArrowForward, ArrowRight} from "./InfoElements"
 
 
 const InfoSection = ({
     id, 
-    imgStart, 
+    gradientOrder,
+    textColumn,
+    emptyColumn,
     topLine, 
     lightText, 
     headline, 
-    darkText, 
     lightTextDesc,
     description, 
     buttonLabel, 
-    img, 
-    alt,
-    primary,
-    dark,
-    dark2
+    img
 
 }) => {
 
@@ -32,15 +29,14 @@ const InfoSection = ({
 
     return (
         <>
-        <InfoContainer img={img} id={id} >
+        <InfoContainer img={img} id={id} gradientOrder={gradientOrder}>
         <InfoWrapper className="container-fluid">
-            <InfoRow imgStart={imgStart} className="row">
-                <Column1 className="col-xl-6">
-                <TextWrapper>
+            <div className="row">
+                <InfoColumn className={ "col-xl-6 " + textColumn }>
                     <TopLine>{topLine}</TopLine>
                     <Heading lightText={lightText}>{headline}</Heading>
                     <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                    <BtnWrap>
+            <BtnWrap>
             <Button to="/facilities" 
             className="facilityBtn"
             onMouseEnter={onHover} 
@@ -57,14 +53,13 @@ const InfoSection = ({
             </Button>
 
             </BtnWrap>
-                </TextWrapper>
-                </Column1>
-                {/* <Column2>
-                    <ImgWrap>
-                        <Img src={img} alt={alt} />
-                    </ImgWrap>
-                </Column2> */}
-            </InfoRow>
+
+
+                </InfoColumn>
+                <div className={"col-xl-6 " + emptyColumn}>
+
+                </div>
+            </div>
         </InfoWrapper>
         </InfoContainer>
 

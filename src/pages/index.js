@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import HeroSection from '../components/HeroSection'
 import InfoSection from '../components/InfoSection'
-import { facilitySection } from '../components/InfoSection/Data'
+import { facilitySection, personalTrainingSection, groupTrainingSection } from '../components/InfoSection/Data'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 // import Services from "../components/Services"
@@ -22,8 +22,9 @@ const Home = () => {
         <Navbar toggle={toggle} />
         <HeroSection />
         <InfoSection {...facilitySection}/>
-        {/* <InfoSection {...homeObjTwo}/> 
-        <Services />
+        <InfoSection {...personalTrainingSection}/>
+        <InfoSection {...groupTrainingSection}/> 
+        {/* <Services />
         <InfoSection {...homeObjThree}/> 
         <Footer />  */}
 
