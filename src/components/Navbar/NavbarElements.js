@@ -37,7 +37,7 @@ height: 80px;
 width: 150px;
 margin-top: 10px;
 margin-bottom: 15px;
-`
+`;
 
 export const NavLogo = styled(LinkR)`
 color: #fff;

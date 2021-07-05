@@ -46,7 +46,7 @@ export const groupTrainingSection = {
     lightText: true,
     lightTextDesc: true,
     topLine: 'GROUP TRAINING',
-    headline: "Our classes incorporate the latest fitness trends, having fun whilst working out with like-minded members",
+    headline: "Our classes incorporate the latest fitness trends, have fun while working out with like-minded members",
     description: "We offer a wide variety of group fitness classes from energetic workout sessions, to more relaxed classes. \
     We also have entry-level lessons for beginners to ensure that new gym-goers are welcomed and able to participate. If you’re looking for an intense workout, \
     give our classes a try. Iron House have classes to accommodate people of all fitness levels.",

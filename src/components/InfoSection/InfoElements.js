@@ -26,7 +26,7 @@ justify-content: center;
 
 
 export const InfoColumn = styled.div `
-margin-top: 245px;
+margin-top: 25%;
 ${'' /* margin-top: 50%;
 margin-bottom: auto; */}
 padding: 0 15px;

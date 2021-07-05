@@ -5,7 +5,7 @@ import { facilitySection, personalTrainingSection, groupTrainingSection } from '
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 // import Services from "../components/Services"
-// import Footer from "../components/Footer/index"
+import Footer from "../components/Footer/index"
 
 const Home = () => {
 
@@ -25,8 +25,8 @@ const Home = () => {
         <InfoSection {...personalTrainingSection}/>
         <InfoSection {...groupTrainingSection}/> 
         {/* <Services />
-        <InfoSection {...homeObjThree}/> 
-        <Footer />  */}
+        <InfoSection {...homeObjThree}/>  */}
+        <Footer /> 
 
         </>
     )
