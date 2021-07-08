@@ -80,49 +80,28 @@ const Footer = () => {
                         <ul><FooterLink to="/termsOfServices" target="_blank">Terms of Services</FooterLink></ul>
                         <ul><FooterLink to="/privacy" target="_blank">Privacy</FooterLink></ul>
                             
-                            
-                            
-  
+                        
                     </FooterLinkItems>
                     <FooterLinkItems className="col-lg-3">
                         <FooterLinkTitle> Trading Hours </FooterLinkTitle> 
                         <ul>Weekly: 05h00 - 21H00</ul>
-                        <ul>Saturday: 07h00 - 17H00</ul>
+                        <ul>Saturdays: 07h00 - 17H00</ul>
                         <ul>Sundays: 08h00 - 16H00</ul>
                         <ul>Holidays: 08h00 - 16H00</ul>
-                            {/* <FooterLink to="/signin">Submit Video</FooterLink>
-                            <FooterLink to="/signin">Ambassadors</FooterLink>
-                            <FooterLink to="/signin">Agency</FooterLink>
-                            <FooterLink to="/signin">Influencer</FooterLink> */}
+
                     </FooterLinkItems>
                 </FooterLinksWrapper>
-
-                {/* <FooterLinksWrapper>
-
-                    <FooterLinkItems>
-                        <FooterLinkTitle> Social Media </FooterLinkTitle> 
-                            <FooterLink to="/signin">Instagram</FooterLink>
-                            <FooterLink to="/signin">Facebook</FooterLink>
-                            <FooterLink to="/signin">YouTube</FooterLink>
-                            <FooterLink to="/signin">Twitter</FooterLink>
-                            <FooterLink to="/signin">TikTok</FooterLink>
-                    </FooterLinkItems>
-                </FooterLinksWrapper> */}
             </FooterLinksContainer>
-
         </FooterWrap>
-
 
             <SocialMedia className="container-fluid">
                 <SocialMediaWrap className="row">
                 <GymIconWrap to="/" onClick={toggleHome} className="logo col-lg-4">
                 <GymIcon src={LogoIcon} />
                 </GymIconWrap>
-                
-                {/* <p className="ihLogo col-lg-4">HIgh</p> */}
-                    {/* <SocialLogo to="/" onClick={toggleHome}>Iron House Gym</SocialLogo> */}
+
                     <WebsiteRights className="trademark col-lg-4 ">Iron House Gym © {currentYear}. All Rights Reserved. </WebsiteRights>
-                    <Designer className="designer col-lg-4">Designed & Developed by <a className="companyLink" href="">NiY<span style={{color:"red"}}>O</span></a> </Designer>
+                    <Designer className="designer col-lg-4">Web Design By <a className="companyLink" href="">NiY<span style={{color:"red"}}>O</span></a> </Designer>
 
                 </SocialMediaWrap>
             </SocialMedia>

@@ -7,6 +7,7 @@ import Sidebar from '../components/Sidebar'
 // import Services from "../components/Services"
 import Footer from "../components/Footer/index"
 
+
 const Home = () => {
 
     const [isOpen, setIsOpen] = useState(false)
@@ -24,9 +25,7 @@ const Home = () => {
         <InfoSection {...facilitySection}/>
         <InfoSection {...personalTrainingSection}/>
         <InfoSection {...groupTrainingSection}/> 
-        {/* <Services />
-        <InfoSection {...homeObjThree}/>  */}
-        <Footer /> 
+        <Footer  /> 
 
         </>
     )
