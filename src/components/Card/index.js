@@ -1,15 +1,34 @@
 import React from 'react'
+import { ReactSVG } from 'react-svg'
 import Background from "../Background"
 
 
-import { HeadingContainer, HeadingH1, CardsContainer, Row, Deck } from "./CardElements"
+import { 
+    HeadingContainer, 
+    HeadingH1, 
+    CardsContainer, 
+    Row, 
+    Deck, 
+    DeckH5, 
+    DeckP, 
+    AmenitiesContainer, 
+    AmenitiesH1, 
+    AmenitiesP,
+    IconsContainer,
+    IconsWrapper,
+    AmenityContainer,
+    AmenityIcon,
+    AmenitiesH5,
+    AmenityImage
+} from "./CardElements"
 
 
 const Card = ({
     id, 
     img,
     title,
-    data
+    data,
+    data1
 
 }) => {
 
@@ -33,12 +52,13 @@ const Card = ({
         {subset1.map((facility, index) => {
           return (
             
-            <Deck className={"card border border-success "+ + facility.order} style={{width : "22rem"}}>
+            <Deck className={"card border border-success shadow rounded "+ + facility.order} style={{width : "22rem"}}>
             <div key={index}>
+            
             <img src={facility.img} class="card-img-top" alt={facility.alt}  style={{height : "12rem"}} />
                 <div class="card-body">
-                    <h5 class="card-title">{facility.name}</h5>
-                    <p class="card-text">{facility.desc}</p>
+                    <DeckH5 class="card-title">{facility.name}</DeckH5>
+                    <DeckP class="card-text">{facility.desc}</DeckP>
                 </div>
             </div>
             </Deck>
@@ -52,12 +72,12 @@ const Card = ({
         {subset2.map((facility, index) => {
         return (
             
-            <Deck className={"card border border-success "+ + facility.order} style={{width : "22rem"}}>
+            <Deck className={"card border border-success shadow rounded "+ + facility.order} style={{width : "22rem"}}>
             <div key={index}>
             <img src={facility.img} class="card-img-top" alt={facility.alt}  style={{height : "12rem"}} />
                 <div class="card-body">
-                    <h5 class="card-title">{facility.name}</h5>
-                    <p class="card-text">{facility.desc}</p>
+                    <DeckH5 class="card-title">{facility.name}</DeckH5>
+                    <DeckP class="card-text">{facility.desc}</DeckP>
                 </div>
             </div>
             </Deck>
@@ -71,12 +91,12 @@ const Card = ({
         {subset3.map((facility, index) => {
         return (
             
-            <Deck className={"card border border-success "+ + facility.order} style={{width : "22rem"}}>
+            <Deck className={"card border border-success shadow rounded "+ + facility.order} style={{width : "22rem"}}>
             <div key={index}>
             <img src={facility.img} class="card-img-top" alt={facility.alt}  style={{height : "12rem"}} />
                 <div class="card-body">
-                    <h5 class="card-title">{facility.name}</h5>
-                    <p class="card-text">{facility.desc}</p>
+                    <DeckH5 class="card-title">{facility.name}</DeckH5>
+                    <DeckP class="card-text">{facility.desc}</DeckP>
                 </div>
             </div>
             </Deck>
@@ -89,6 +109,39 @@ const Card = ({
 
 
         </CardsContainer>
+
+        <AmenitiesContainer className="container-fluid">
+
+        <AmenitiesH1>MORE FACILITIES</AmenitiesH1>
+      
+        <AmenitiesP>Here are more Amenities available at the Iron House Gym</AmenitiesP>
+
+        <IconsContainer className="container-fluid">
+            <IconsWrapper className="row">
+            {data1.map((amenities, index) => {
+                return (
+
+            <AmenityContainer className="amenity ">
+            <AmenityIcon className="svgIcon">
+            {/* <ReactSVG className="border border-success shadow rounded-circle" src={amenities.img} wrapper="svg"  style={{height : "15rem"}}/> */}
+            <AmenityImage className="shadow rounded-circle" src={amenities.img} alt={amenities.alt} style={{height : "10rem", padding: "25px"}} />
+
+            </AmenityIcon>
+            <AmenitiesH5>{amenities.name}</AmenitiesH5>
+            </AmenityContainer>
+
+            );
+        })}
+
+            </IconsWrapper>
+        </IconsContainer>
+
+        </AmenitiesContainer>
+
+
+
+            
+
 
         </>
     )

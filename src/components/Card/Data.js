@@ -8,6 +8,13 @@ import facility7 from '../../images/facilities/11_mainStudio.jpg';
 import facility8 from '../../images/facilities/12_nutritionBar.jpg';
 import facility9 from '../../images/facilities/13_functionalTraining.jpg';
 
+import amenities1 from '../../images/facilities/amenities/changing-room.svg';
+import amenities2 from '../../images/facilities/amenities/lockers.svg';
+import amenities3 from '../../images/facilities/amenities/shower.svg';
+import amenities4 from '../../images/facilities/amenities/water-dispenser.svg';
+import amenities5 from '../../images/facilities/amenities/dining-room.svg';
+import amenities6 from '../../images/facilities/amenities/wifi-signal.svg';
+
 
 export const FacilityData = [
   {
@@ -93,32 +100,49 @@ export const FacilityData = [
   }
 ];
 
-// export const productDataTwo = [
-//   {
-//     img: sweet2,
-//     alt: 'Donuts',
-//     name: 'Doughlicious',
-//     desc:
-//       'Belgian chocolate glazed donuts covered in icing with sprinkles on top',
-//     price: '$9.99',
-//     button: 'Add to Cart'
-//   },
-//   {
-//     img: sweet3,
-//     alt: 'Ice Cream',
-//     name: 'Caramel Wonder',
-//     desc:
-//       'Vanilla ice cream covered with caramel and chocolate glaze topped with a coco stick',
-//     price: '$12.99',
-//     button: 'Add to Cart'
-//   },
-//   {
-//     img: sweet1,
-//     alt: 'Brownie',
-//     name: 'Brownie Bunch',
-//     desc:
-//       'Double fudge brownie squares topped with white chocolate pieces and macadamia nuts',
-//     price: '$9.99',
-//     button: 'Add to Cart'
-//   }
-// ];
+export const AmenityData = [
+  {
+    id: "changeRoom",
+    img: amenities1,
+    alt: 'Change Room',
+    name: 'CHANGING ROOMS',
+    order: "col-md-12 col-lg-4"
+  },
+  {
+    id: "lockers",
+    img: amenities2,
+    alt: 'Lockers',
+    name: 'LOCKERS',
+    order: "col-md-12 col-lg-4"
+  },
+  {
+    id: "showers",
+    img: amenities3,
+    alt: 'Showers',
+    name: 'SHOWERS',
+    order: "col-md-12 col-lg-4"
+  },
+  {
+    id: "water",
+    img: amenities4,
+    alt: 'Water Dispenser',
+    name: 'WATER DISPENSER',
+    order: "col-md-12 col-lg-4"
+  },
+  {
+    id: "dining",
+    img: amenities5,
+    alt: 'Dining Area',
+    name: 'DINING AREA',
+    order: "col-md-12 col-lg-4"
+  },
+  {
+    id: "wifi",
+    img: amenities6,
+    alt: 'Wifi',
+    name: 'FREE WIFI',
+    order: "col-md-12 col-lg-4"
+  }
+
+]
+

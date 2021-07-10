@@ -6,7 +6,7 @@ import ScrollToTop from "../components/ScrollToTop"
 import { facilityIntro } from '../components/IntroSection/Data'
 import IntroSection from '../components/IntroSection/index'
 import Card from '../components/Card';
-import { FacilityData } from '../components/Card/Data'
+import { FacilityData, AmenityData } from '../components/Card/Data'
 
 
 const Facilities = () => {
@@ -25,7 +25,7 @@ const Facilities = () => {
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle} />
             <IntroSection {...facilityIntro} />
-            <Card data = {FacilityData} />
+            <Card data = {FacilityData} data1 = {AmenityData}/>
            <Footer />
         </>
     )
