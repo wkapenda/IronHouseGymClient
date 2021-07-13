@@ -15,7 +15,8 @@ const InfoSection = ({
     lightTextDesc,
     description, 
     buttonLabel, 
-    img
+    img,
+    infoRoute
 
 }) => {
 
@@ -37,7 +38,7 @@ const InfoSection = ({
                     <Heading lightText={lightText}>{headline}</Heading>
                     <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
             <BtnWrap>
-            <Button to="/facilities" 
+            <Button to={infoRoute} 
             className="facilityBtn"
             onMouseEnter={onHover} 
             onMouseLeave={onHover}

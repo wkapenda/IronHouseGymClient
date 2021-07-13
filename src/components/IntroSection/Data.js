@@ -4,3 +4,10 @@ export const facilityIntro = {
     title: "Facilities",
 
 }
+
+export const personalTrainingIntro = {
+    id: 'personalTraining',
+    img: require('../../images/personalTraining/introPersonalTraining.jpeg').default,
+    title: "Personal Training",
+
+}

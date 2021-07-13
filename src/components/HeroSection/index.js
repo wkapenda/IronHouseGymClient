@@ -68,7 +68,7 @@ const HeroSection = () => {
         <HeroContent>
             <HeroH1 className="heroHeading">IRON HOUSE GYM</HeroH1>
             <HeroP className="heroText">Get the strength workouts, cardio equipment, 
-            group exercise classes and personal training, all the support you need to crush your fitness goals. 
+            personal training and group exercise classes, all the support you need to crush your fitness goals. 
             Are you in?</HeroP>
             <HeroBtnWrapper>
             <Button to="signup" 

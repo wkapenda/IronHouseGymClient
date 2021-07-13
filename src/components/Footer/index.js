@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { BiPhone } from 'react-icons/bi';
 import { AiOutlineMail } from 'react-icons/ai';
 import { GrLocation } from 'react-icons/gr';
@@ -101,7 +101,7 @@ const Footer = () => {
                 </GymIconWrap>
 
                     <WebsiteRights className="trademark col-lg-4 ">Iron House Gym © {currentYear}. All Rights Reserved. </WebsiteRights>
-                    <Designer className="designer col-lg-4">Web Design By <a className="companyLink" href="">NiY<span style={{color:"red"}}>O</span></a> </Designer>
+                    <Designer className="designer col-lg-4">Web Development By <a className="companyLink" href="">NiY<span style={{color:"red"}}>O</span></a> </Designer>
 
                 </SocialMediaWrap>
             </SocialMedia>

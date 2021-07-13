@@ -9,17 +9,17 @@ export const CardsContainer = styled.section `
   background-position: center;
   background-size: cover; */}
 
-  margin: 2rem auto;
+margin: 2rem auto;
 max-width: 1200px;
 ${'' /* flex-direction: row;
 text-align: center; */}
 ${'' /* display: flex; */}
 display: flex;
-  flex-wrap: wrap;
-  align-content: center;
+flex-wrap: wrap;
+align-content: center;
 justify-content: center;
 align-self: center;
-padding-left: 3rem;
+
 
 `;
 
@@ -32,11 +32,12 @@ display: flex;
 flex-direction: start; */}
 ${'' /* align-items: center; */}
 margin: 0 auto;
-max-width: 1000px;
+max-width: 600px;
 display: flex;
 flex-direction: row;
 text-align: center;
 justify-content: center;
+
 `
 
 export const HeadingH1 = styled.h1 `
@@ -44,6 +45,8 @@ color: black;
 margin-top: 42px;
 font-size: 20px;
 font-weight: bold;
+padding: 0 2rem;
+
 
 `
 
@@ -78,7 +81,7 @@ export const AmenitiesContainer = styled.section `
 
 margin: 2rem auto;
 max-width: 1200px;
-padding-left: 3rem;
+${'' /* padding-left: 3rem; */}
 
 `;
 

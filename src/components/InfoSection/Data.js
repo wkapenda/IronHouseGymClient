@@ -16,6 +16,7 @@ export const facilitySection = {
     imgStart: false,
     img: require('../../images/1_facility.jpg').default,
     alt: "gymFacility",
+    infoRoute: "/facilities"
 
 }
 
@@ -35,6 +36,7 @@ export const personalTrainingSection = {
     imgStart: false,
     img: require('../../images/2_personalTraining.jpg').default,
     alt: "personalTraining",
+    infoRoute: "/personalTraining"
 
 }
 
@@ -54,6 +56,7 @@ export const groupTrainingSection = {
     imgStart: false,
     img: require('../../images/3_groupTraining.jpg').default,
     alt: "groupTraining",
+    infoRoute: "/groupTraining"
 
 }
 
