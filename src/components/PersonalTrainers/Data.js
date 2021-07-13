@@ -15,8 +15,9 @@ export const TrainersData = [
       "Weight Loss",
       "Strength Training"   
     ],
-    cell: "+264816518947",
-    order: "col-md-12 col-lg-6"
+    cell: "tel:+264816518947",
+    fb: "https://www.facebook.com/pages/category/Gym-Physical-Fitness-Center/Iron-House-Namibia-1311359662247419/",
+    ig: "https://www.instagram.com/ironhousenam/?hl=en"
   },
   {
     id: "t2",
@@ -25,10 +26,12 @@ export const TrainersData = [
     trainerName: 'SARAH',
     specialities: [
       "Nutrition & Diet",
-      "Resistance Training"   
+      "Resistance Training",
+      "Weight Loss"   
     ],
-    cell: "+264816518947",
-    order: "col-md-12 col-lg-6"
+    cell: "tel:+264816518947",
+    fb: "https://www.facebook.com/pages/category/Gym-Physical-Fitness-Center/Iron-House-Namibia-1311359662247419/",
+    ig: "https://www.instagram.com/ironhousenam/?hl=en"
   },
   {
     id: "t3",
@@ -37,10 +40,12 @@ export const TrainersData = [
     trainerName: 'ANTHONY',
     specialities: [
       "Rehabilitation",
-      "Sports"   
+      "Sports",
+      "Nutrition & Diet"  
     ],
-    cell: "+264816518947",
-    order: "col-md-12 col-lg-6"
+    cell: "tel:+264816518947",
+    fb: "https://www.facebook.com/pages/category/Gym-Physical-Fitness-Center/Iron-House-Namibia-1311359662247419/",
+    ig: "https://www.instagram.com/ironhousenam/?hl=en"
   },
   {
     id: "t4",
@@ -51,8 +56,9 @@ export const TrainersData = [
       "Nutrition & Diet",
       "Resistance Training"   
     ],
-    cell: "+264816518947",
-    order: "col-md-12 col-lg-6"
+    cell: "tel:+264816518947",
+    fb: "https://www.facebook.com/pages/category/Gym-Physical-Fitness-Center/Iron-House-Namibia-1311359662247419/",
+    ig: "https://www.instagram.com/ironhousenam/?hl=en"
   },
   {
     id: "t5",
@@ -63,8 +69,9 @@ export const TrainersData = [
       "Weight Loss",
       "Strength Training"   
     ],
-    cell: "+264816518947",
-    order: "col-md-12 col-lg-6"
+    cell: "tel:+264816518947",
+    fb: "https://www.facebook.com/pages/category/Gym-Physical-Fitness-Center/Iron-House-Namibia-1311359662247419/",
+    ig: "https://www.instagram.com/ironhousenam/?hl=en"
   },
   {
     id: "t6",
@@ -75,7 +82,8 @@ export const TrainersData = [
       "Boxing",
       "Martial Arts"   
     ],
-    cell: "+264816518947",
-    order: "col-md-12 col-lg-6"
+    cell: "tel:+264816518947",
+    fb: "https://www.facebook.com/pages/category/Gym-Physical-Fitness-Center/Iron-House-Namibia-1311359662247419/",
+    ig: "https://www.instagram.com/ironhousenam/?hl=en"
   }
 ];

@@ -52,7 +52,7 @@ const Card = ({
         {subset1.map((facility, index) => {
           return (
             
-            <Deck className={"card border border-success shadow rounded "+ + facility.order} style={{width : "22rem"}}>
+            <Deck className={"card border border-success shadow rounded "+ facility.order} style={{width : "22rem"}}>
             <div key={index}>
             
             <img src={facility.img} class="card-img-top" alt={facility.alt}  style={{height : "12rem"}} />
@@ -72,7 +72,7 @@ const Card = ({
         {subset2.map((facility, index) => {
         return (
             
-            <Deck className={"card border border-success shadow rounded "+ + facility.order} style={{width : "22rem"}}>
+            <Deck className={"card border border-success shadow rounded "+ facility.order} style={{width : "22rem"}}>
             <div key={index}>
             <img src={facility.img} class="card-img-top" alt={facility.alt}  style={{height : "12rem"}} />
                 <div class="card-body">
@@ -91,7 +91,7 @@ const Card = ({
         {subset3.map((facility, index) => {
         return (
             
-            <Deck className={"card border border-success shadow rounded "+ + facility.order} style={{width : "22rem"}}>
+            <Deck className={"card border border-success shadow rounded "+ facility.order} style={{width : "22rem"}}>
             <div key={index}>
             <img src={facility.img} class="card-img-top" alt={facility.alt}  style={{height : "12rem"}} />
                 <div class="card-body">

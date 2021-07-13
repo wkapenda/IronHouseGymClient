@@ -1,5 +1,9 @@
 import React from 'react'
 import {HeadingContainer, HeadingH1 } from "../Card/CardElements"
+import { FaFacebook, FaInstagram, FaYoutube, FaPhoneSquareAlt } from 'react-icons/fa';
+import { SocialIconLink } from "../Footer/FooterElements"
+import "./trainers.css"
+
 import {
     TrainersContainer,
     TrainersCardsContainer,
@@ -7,7 +11,8 @@ import {
     TrainerCard,
     TrainerH5,
     TrainerP,
-    TrainerSpan
+    TrainerSpan,
+    CellLink
 }
 from "../PersonalTrainers/PersonalTrainersElements"
 
@@ -29,7 +34,7 @@ const PersonalTrainers = ({trainersData}) => {
         const traits = trainers.specialities;
         return (
             
-            <TrainerCard className={"card border border-success shadow rounded "} style={{width : "32rem", height : "30rem"}}>
+            <TrainerCard className={"card border border-success shadow rounded "} style={{width : "32rem", height : "31rem"}}>
             <div key={index}>
             
             <img src={trainers.img} className="card-img-top" alt={trainers.alt}  style={{height : "22rem"}} />
@@ -40,11 +45,21 @@ const PersonalTrainers = ({trainersData}) => {
                          
                         return (
                             <TrainerSpan className="badge badge-success">{niche}</TrainerSpan>
-                        )
-                        
+                        ) 
+
                     })}
-                    </TrainerP>
+                    </TrainerP> 
+                    <TrainerP>Contact/Follow: 
+                    <CellLink href={trainers.cell}> <FaPhoneSquareAlt /> </CellLink>
+                    <SocialIconLink className="SocialIcons" href={trainers.fb} target="_blank" aria-label="Facebook">
+                            <FaFacebook className="facebookIcon" />
+                    </SocialIconLink>
+                    <SocialIconLink className="SocialIcons" href={trainers.ig} target="_blank" aria-label="Instagram">
+                            <FaInstagram className="instagramIcon" />
+                    </SocialIconLink>
                     
+                    </TrainerP>    
+        
                 </div>
             </div>
             </TrainerCard>
