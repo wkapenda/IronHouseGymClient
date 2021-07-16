@@ -24,9 +24,7 @@ import {
 
 
 const Card = ({
-    id, 
-    img,
-    title,
+ 
     data,
     data1
 
@@ -49,10 +47,10 @@ const Card = ({
 
         {/* <div className="cards container">  */}
         <Row className="row">
-        {subset1.map((facility, index) => {
+        {data.map((facility, index) => {
           return (
             
-            <Deck className={"card border border-success shadow rounded "+ facility.order} style={{width : "22rem"}}>
+            <Deck className={"card border border-success shadow rounded "} style={{width : "22rem", height : "20rem"}}>
             <div key={index}>
             
             <img src={facility.img} class="card-img-top" alt={facility.alt}  style={{height : "12rem"}} />
@@ -68,11 +66,11 @@ const Card = ({
 
         </Row>
 
-        <Row className="row">
+        {/* <Row className="row">
         {subset2.map((facility, index) => {
         return (
             
-            <Deck className={"card border border-success shadow rounded "+ facility.order} style={{width : "22rem"}}>
+            <Deck className={"card border border-success shadow rounded "+ + facility.order} style={{width : "22rem"}}>
             <div key={index}>
             <img src={facility.img} class="card-img-top" alt={facility.alt}  style={{height : "12rem"}} />
                 <div class="card-body">
@@ -91,7 +89,7 @@ const Card = ({
         {subset3.map((facility, index) => {
         return (
             
-            <Deck className={"card border border-success shadow rounded "+ facility.order} style={{width : "22rem"}}>
+            <Deck className={"card border border-success shadow rounded "+ + facility.order} style={{width : "22rem"}}>
             <div key={index}>
             <img src={facility.img} class="card-img-top" alt={facility.alt}  style={{height : "12rem"}} />
                 <div class="card-body">
@@ -103,7 +101,7 @@ const Card = ({
             
         );
         })}
-        </Row>
+        </Row> */}
 
         {/* </div> */}
 

@@ -4,9 +4,6 @@ export const TrainersContainer = styled.section `
 
 margin: 2rem auto;
 
-
-
-
 `;
 
 

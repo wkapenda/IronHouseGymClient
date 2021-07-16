@@ -5,7 +5,7 @@ import LogoIcon from "../../images/ihLogo.png";
 import { VscAccount } from "react-icons/vsc"
 import "./navbar.css";
 
-import { Nav, NavbarContainer, GymIcon, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, NavIconLink, MobileWrap} from "./NavbarElements";
+import { Nav, NavbarContainer, GymIcon, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, NavIconLink, MobileWrap } from "./NavbarElements";
 
 //rafpce
 
@@ -33,7 +33,9 @@ const Navbar = ({ toggle }) => {
     return (
         <>
         <IconContext.Provider value={{ color: "#fff" }}>
-        <Nav scrollNav={scrollNav}>
+        {/* <NavbarBorder className="border-bottom border-success"> */}
+        <Nav className="border-bottom border-success shadow-lg" scrollNav={scrollNav}>
+        
         <NavbarContainer>
             <NavLogo to='/' onClick={toggleHome}> 
             <GymIcon src={LogoIcon} />
@@ -88,8 +90,11 @@ const Navbar = ({ toggle }) => {
                     <NavBtnLink to="/contact">Contact Us</NavBtnLink>
             </NavBtn>
         </NavbarContainer>
+        
+
 
         </Nav>
+        {/* </NavbarBorder> */}
         </IconContext.Provider>
             
         </>

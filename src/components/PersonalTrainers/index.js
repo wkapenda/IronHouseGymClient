@@ -34,7 +34,7 @@ const PersonalTrainers = ({trainersData}) => {
         const traits = trainers.specialities;
         return (
             
-            <TrainerCard className={"card border border-success shadow rounded "} style={{width : "32rem", height : "31rem"}}>
+            <TrainerCard className={"card border border-success shadow rounded "} style={{width : "32rem", height : "auto"}}>
             <div key={index}>
             
             <img src={trainers.img} className="card-img-top" alt={trainers.alt}  style={{height : "22rem"}} />

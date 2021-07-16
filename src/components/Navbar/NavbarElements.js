@@ -4,6 +4,12 @@ import { Link as LinkR } from "react-router-dom"
 import {FaBars} from "react-icons/fa"
 
 
+// export const NavbarBorder = styled.div `
+//     border-width: 1em;
+//     position: sticky;
+
+// `;
+
 export const Nav = styled.nav `
 background: #fff;
 height: 80px;
@@ -14,6 +20,7 @@ font-size: 1rem;
 position: sticky;
 top: 0;
 z-index: 10;
+border-width: 5px;
 
 @media screen and (max-width: 960px){
     transition: 0.8s all ease;

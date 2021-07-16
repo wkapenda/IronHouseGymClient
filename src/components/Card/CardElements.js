@@ -1,24 +1,12 @@
 import styled from "styled-components"
 
 export const CardsContainer = styled.section `
-  ${'' /* background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,255,0,0.3)); */}
-  ${'' /* background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.6) 100%),
-    linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%); */}
-  ${'' /* height: 200px;
-  width: 100%;
-  background-position: center;
-  background-size: cover; */}
 
-margin: 2rem auto;
-max-width: 1200px;
-${'' /* flex-direction: row;
-text-align: center; */}
-${'' /* display: flex; */}
-display: flex;
-flex-wrap: wrap;
-align-content: center;
-justify-content: center;
-align-self: center;
+margin: 0 auto;
+max-width: 1150px;
+padding: 0 2rem;
+
+
 
 
 `;
@@ -57,9 +45,12 @@ margin-bottom: 0.5rem;
 `
 
 export const Deck = styled.div `
-margin-left: 0.5rem;
+${'' /* margin-left: 0.5rem;
 margin-right: 0.5rem;
-background: #DCE35B;
+background: #DCE35B; */}
+
+background: white;
+margin: 1rem auto;
 
 `
 
