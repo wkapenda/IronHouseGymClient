@@ -13,7 +13,7 @@ outline: none;
 border: none;
 cursor: pointer;
 display: flex;
-justify-content: left;
+justify-content: center;
 align-items: center;
 transition: all 0.2s ease-in-out;
 margin-top: 24px;

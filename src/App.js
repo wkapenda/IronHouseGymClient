@@ -5,7 +5,8 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import Home from "./pages";
 import Facilities from "./pages/facilities";
 import PersonalTraining from "./pages/personalTraining";
-import groupTraining from "./pages/groupTraining";
+import GroupTraining from "./pages/groupTraining";
+import Membership from './pages/memberships';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
     <Route path='/' component={Home} exact />
     <Route path='/facilities' component={Facilities} exact />
     <Route path='/personalTraining' component={PersonalTraining} exact />
-    <Route path='/groupTraining' component={groupTraining} exact />
+    <Route path='/groupTraining' component={GroupTraining} exact />
+    <Route path='/memberships' component={Membership} exact />
 
     </Switch>
     </Router>

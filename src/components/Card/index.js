@@ -1,6 +1,4 @@
 import React from 'react'
-import { ReactSVG } from 'react-svg'
-import Background from "../Background"
 
 
 import { 
@@ -30,10 +28,6 @@ const Card = ({
 
 }) => {
 
-    let subset1 = data.slice(0, 3)
-    let subset2 = data.slice(3, 6)
-    let subset3 = data.slice(6, 9)
-
 
     return (
         <>
@@ -45,7 +39,6 @@ const Card = ({
 
         <CardsContainer className="cards container">
 
-        {/* <div className="cards container">  */}
         <Row className="row">
         {data.map((facility, index) => {
           return (
@@ -66,45 +59,6 @@ const Card = ({
 
         </Row>
 
-        {/* <Row className="row">
-        {subset2.map((facility, index) => {
-        return (
-            
-            <Deck className={"card border border-success shadow rounded "+ + facility.order} style={{width : "22rem"}}>
-            <div key={index}>
-            <img src={facility.img} class="card-img-top" alt={facility.alt}  style={{height : "12rem"}} />
-                <div class="card-body">
-                    <DeckH5 class="card-title">{facility.name}</DeckH5>
-                    <DeckP class="card-text">{facility.desc}</DeckP>
-                </div>
-            </div>
-            </Deck>
-            
-        );
-        })}
-
-        </Row>
-
-        <Row className="row">
-        {subset3.map((facility, index) => {
-        return (
-            
-            <Deck className={"card border border-success shadow rounded "+ + facility.order} style={{width : "22rem"}}>
-            <div key={index}>
-            <img src={facility.img} class="card-img-top" alt={facility.alt}  style={{height : "12rem"}} />
-                <div class="card-body">
-                    <DeckH5 class="card-title">{facility.name}</DeckH5>
-                    <DeckP class="card-text">{facility.desc}</DeckP>
-                </div>
-            </div>
-            </Deck>
-            
-        );
-        })}
-        </Row> */}
-
-        {/* </div> */}
-
 
         </CardsContainer>
 
@@ -121,7 +75,6 @@ const Card = ({
 
             <AmenityContainer className="amenity ">
             <AmenityIcon className="svgIcon">
-            {/* <ReactSVG className="border border-success shadow rounded-circle" src={amenities.img} wrapper="svg"  style={{height : "15rem"}}/> */}
             <AmenityImage className="shadow rounded-circle" src={amenities.img} alt={amenities.alt} style={{height : "10rem", padding: "25px"}} />
 
             </AmenityIcon>
@@ -135,11 +88,6 @@ const Card = ({
         </IconsContainer>
 
         </AmenitiesContainer>
-
-
-
-            
-
 
         </>
     )

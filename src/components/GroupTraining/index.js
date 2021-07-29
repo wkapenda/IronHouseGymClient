@@ -54,7 +54,7 @@ const GroupTrainingSection = ({groupTrainingData}) => {
 
         <RightColumnContainer>
         <Button to={groupTrainingData.classRoute} 
-            className="facilityBtn"
+            className="groupTrainBtn"
             onMouseEnter={onHover} 
             onMouseLeave={onHover}
             primary="true"
