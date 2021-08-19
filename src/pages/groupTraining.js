@@ -5,7 +5,6 @@ import Sidebar from '../components/Sidebar'
 import ScrollToTop from "../components/ScrollToTop"
 import { groupTrainingIntro } from '../components/IntroSection/Data'
 import IntroSection from '../components/IntroSection/index'
-import PersonalTrainers from '../components/PersonalTrainers'
 import { ClassesContainer } from "../components/GroupTraining/GroupTrainingElements"
 import {HeadingContainer, HeadingH1 } from "../components/Card/CardElements"
 import { WednesdayClassData, SaturdayClassData } from '../components/GroupTraining/Data'

@@ -36,7 +36,7 @@ export const personalTrainingSection = {
     imgStart: false,
     img: require('../../images/2_personalTraining.jpg').default,
     alt: "personalTraining",
-    infoRoute: "/personalTraining"
+    infoRoute: "/personaltraining"
 
 }
 
@@ -56,40 +56,6 @@ export const groupTrainingSection = {
     imgStart: false,
     img: require('../../images/3_groupTraining.jpg').default,
     alt: "groupTraining",
-    infoRoute: "/groupTraining"
+    infoRoute: "/grouptraining"
 
 }
-
-// export const homeObjTwo = {
-//     id: 'discover',
-//     lightBg: true,
-//     lightText: false,
-//     lightTextDesc: false,
-//     topLine: 'Unlimited Access',
-//     headline: 'Unilimited Transactions with zero fees',
-//     description: "Velit scelerisque in dictum non consectetur a erat. Purus faucibus ornare suspendisse sed.",
-//     buttonLabel: 'Learn More',
-//     imgStart: true,
-//     img: require('../../images/svg-2.svg').default,
-//     alt: "Ship",
-//     dark: false,
-//     primary: false,
-//     dartText: true
-// }
-
-// export const homeObjThree = {
-//     id: 'signup',
-//     lightBg: true,
-//     lightText: false,
-//     lightTextDesc: false,
-//     topLine: 'Join Our Team',
-//     headline: 'Unilimited Transactions with zero fees',
-//     description: "Velit scelerisque in dictum non consectetur a erat. Purus faucibus ornare suspendisse sed.",
-//     buttonLabel: 'Get started',
-//     imgStart: false,
-//     img: require('../../images/svg-3.svg').default,
-//     alt: "Lady",
-//     dark: false,
-//     primary: false,
-//     dartText: true,
-// }

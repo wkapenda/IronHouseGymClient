@@ -7,6 +7,7 @@ import Facilities from "./pages/facilities";
 import PersonalTraining from "./pages/personalTraining";
 import GroupTraining from "./pages/groupTraining";
 import Membership from './pages/memberships';
+import GroupClass from "./pages/groupClass"
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
     <Switch>
     <Route path='/' component={Home} exact />
     <Route path='/facilities' component={Facilities} exact />
-    <Route path='/personalTraining' component={PersonalTraining} exact />
-    <Route path='/groupTraining' component={GroupTraining} exact />
+    <Route path='/personaltraining' component={PersonalTraining} exact />
+    <Route path='/grouptraining' component={GroupTraining} exact />
+    <Route path="/grouptraining/:session" component={GroupClass} />
     <Route path='/memberships' component={Membership} exact />
 
     </Switch>

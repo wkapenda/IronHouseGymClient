@@ -60,14 +60,14 @@ const Navbar = ({ toggle }) => {
                 </NavItem>
                 <NavItem>
                     <NavLinks 
-                    to="/personalTraining"
+                    to="/personaltraining"
                     >
                     Personal Training
                     </NavLinks>
                 </NavItem>
                 <NavItem>
                     <NavLinks 
-                    to="/groupTraining"
+                    to="/grouptraining"
                     >
                     Group Training
                     </NavLinks>

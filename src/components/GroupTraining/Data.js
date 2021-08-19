@@ -1,5 +1,6 @@
 export const WednesdayClassData = {
-      id: "cardioClass",
+  
+      id: "cardioclass",
       day: "WEDNESDAY",
       class: "CARDIO",
       trainers: [
@@ -9,13 +10,13 @@ export const WednesdayClassData = {
       timePeriod: "18h00 - 19h00",
       duration: "1 hour",
       btnDesc: "Book Now",
-      classRoute: "/grouptraining/cadioclass"
+      classRoute: "/grouptraining/cardioclass"
 
 }
 
 
 export const SaturdayClassData = {
-      id: "hiitClass",
+      id: "hiitclass",
       day: "SATURDAY",
       class: "H.I.I.T",
       trainers: [

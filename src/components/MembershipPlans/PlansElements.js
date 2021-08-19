@@ -46,8 +46,6 @@ export const ButtonWrapper = styled.div `
 
 padding: 0 5rem;
 margin: 0 auto;
-text-align: center;
-align-content: center; 
 margin-top: -1rem;
 
 
