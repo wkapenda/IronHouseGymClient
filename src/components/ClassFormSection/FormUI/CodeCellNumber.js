@@ -3,6 +3,7 @@ import MuiPhoneInput from "material-ui-phone-number";
 import { useField, useFormikContext } from "formik";
 
 const CodeCellNumber = (props) => {
+  
   const { setFieldValue } = useFormikContext();
   const [field, meta] = useField(props.field.name);
 
@@ -14,7 +15,7 @@ const CodeCellNumber = (props) => {
     ...field,
     ...props,
     variant: "outlined",
-    fullWidth: true,
+    fullWidth: false,
     onChange: handleChange
   };
 

@@ -7,6 +7,7 @@ import {
 } from "@material-ui/core";
 
 const renderOptions = (options) => {
+
   return options.map((option) => (
     <FormControlLabel
       key={option}
@@ -25,6 +26,7 @@ const FormikRadioGroup = ({
   children,
   ...props
 }) => {
+  
   const fieldName = name || field.name;
   return (
     <React.Fragment>

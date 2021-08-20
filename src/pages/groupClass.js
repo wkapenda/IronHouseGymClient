@@ -38,10 +38,10 @@ const GroupClass = () => {
         <>
 
         <ScrollToTop />
-        <Sidebar isOpen={isOpen} toggle={toggle}/>
+        <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar toggle={toggle} />
         <ClassSection session = {result} />
-        <FormContainer />
+        <FormContainer session = {result} />
         <Footer />
         
         </>

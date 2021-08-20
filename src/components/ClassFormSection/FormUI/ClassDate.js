@@ -4,10 +4,11 @@ import {
   KeyboardDatePicker
 } from "@material-ui/pickers";
 import DateFnsUtils from "@date-io/date-fns";
-import MomentUtils from '@date-io/moment';
 import { useField, useFormikContext } from "formik";
 
-const DatePicker = (props) => {
+const DatePicker = ({options , ...props}) => {
+
+  console.log(options)
   const { setFieldValue } = useFormikContext();
   const [field, meta] = useField(props.field.name);
   let selectedValue = field.value;
@@ -33,13 +34,18 @@ const DatePicker = (props) => {
   }
 
   function enableDay(date) {
-    return date.getDay() !== 3;
+
+    if(options === "WEDNESDAY"){
+      return date.getDay() !== 3;
+    }else if(options === "SATURDAY"){
+      return date.getDay() !== 6;
+    }
+    
   }
 
   return (
     <React.Fragment>
       <MuiPickersUtilsProvider utils={DateFnsUtils}>
-      {/* <MuiPickersUtilsProvider utils={MomentUtils}> */}
         <KeyboardDatePicker
           {...configDate}
           autoOk

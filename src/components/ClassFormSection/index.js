@@ -3,13 +3,28 @@ import React from "react";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 import { makeStyles } from "@material-ui/core";
-import { Container, Grid, Typography } from "@material-ui/core";
 import Textfield from "./FormUI/Textfield";
 import CodeCellNumber from "./FormUI/CodeCellNumber";
 import DatePicker from "./FormUI/ClassDate";
 import Swal from "sweetalert2";
-import Button from "./FormUI/ReserveButton";
+import ClassButton from "./FormUI/ReserveButton";
 import FormikRadioGroup from "./FormUI/RadioButtons";
+
+import {
+  ClassFormContainer,
+  ClassFormWrapper,
+  TextWrapper,
+  TextH3,
+  FormInputWrapper,
+  FormDate,
+  FormDetailsWrapper,
+  FirstNameInput,
+  LastNameInput,
+  CellNumberInput,
+  GenderInput,
+  ButtonWrapper
+}
+from "./ClassFormElements"
 
 const useStyles = makeStyles((theme) => ({
   formWrapper: {
@@ -18,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const genderOptions = ["Male", "Female", "Other"];
+const genderOptions = ["M", "F", "Other"];
 
 const INITIAL_FORM_STATE = {
   firstName: "",
@@ -41,14 +56,18 @@ const FORM_VALIDATION = Yup.object().shape({
   classDate: Yup.string().required("Required").nullable()
 });
 
-const FormContainer = () => {
+const FormContainer = ({session}) => {
+
+  const [{ day }] = session
+
   const classes = useStyles();
 
   return (
-    <Grid container>
-      <Grid item xs={12}>
-        <Container maxWidth="md">
-          <div className={classes.formWrapper}>
+    <ClassFormContainer>
+      <ClassFormWrapper>
+        <TextWrapper>
+          <TextH3> Please Enter Your Details to Reserve your Spot for this Session </TextH3>
+        </TextWrapper>
             <Formik
               initialValues={{
                 ...INITIAL_FORM_STATE
@@ -68,56 +87,56 @@ const FormContainer = () => {
                 // console.log(formik);
                 return (
                   <Form>
-                    <Grid container spacing={2}>
-                      <Grid item xs={12}>
-                        <Typography>Enter Details</Typography>
-                      </Grid>
+                    <FormInputWrapper className="shadow">
 
-                      <Grid item xs={12}>
+                      <FormDate>
                         <Field
                           label="Select Date*"
                           name="classDate"
                           component={DatePicker}
+                          options={day}
                         />
-                      </Grid>
+                      </FormDate>
 
-                      <Grid item xs={6}>
+                      <FormDetailsWrapper >
+
+                      <FirstNameInput>
                         <Textfield name="firstName" label="First Name*" />
-                      </Grid>
+                      </FirstNameInput>
 
-                      <Grid item xs={6}>
+                      <LastNameInput>
                         <Textfield name="lastName" label="Last Name*" />
-                      </Grid>
+                      </LastNameInput>
 
-                      <Grid item xs={6}>
+                      <CellNumberInput>
                         <Field
                           label="Cell"
                           name="phone"
                           component={CodeCellNumber}
+                          m={100}
                         />
-                      </Grid>
+                      </CellNumberInput>
 
-                      <Grid item xs={6}>
+                      <GenderInput>
                         <Field
                           label="Gender"
                           name="gender"
                           component={FormikRadioGroup}
                           options={genderOptions}
                         />
-                      </Grid>
+                      </GenderInput>
 
-                      <Grid item xs={12}>
-                        <Button>Reserve</Button>
-                      </Grid>
-                    </Grid>
+                      </FormDetailsWrapper>
+                      <ButtonWrapper>
+                        <ClassButton />
+                      </ButtonWrapper>
+                    </FormInputWrapper>
                   </Form>
                 );
               }}
             </Formik>
-          </div>
-        </Container>
-      </Grid>
-    </Grid>
+      </ClassFormWrapper>
+    </ClassFormContainer>
   );
 };
 
