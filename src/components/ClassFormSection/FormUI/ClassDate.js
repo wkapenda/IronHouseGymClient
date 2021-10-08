@@ -8,7 +8,6 @@ import { useField, useFormikContext } from "formik";
 
 const DatePicker = ({options , ...props}) => {
 
-  console.log(options)
   const { setFieldValue } = useFormikContext();
   const [field, meta] = useField(props.field.name);
   let selectedValue = field.value;
